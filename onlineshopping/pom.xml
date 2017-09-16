@@ -15,9 +15,13 @@
 	</properties>
 
 	<dependencies>
-
+		<!--Linked back project  -->
+		<dependency>
+			<groupId>com.yog</groupId>
+			<artifactId>shoppingbackend</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 		<!-- JavaEE api -->
-
 		<dependency>
 			<groupId>javax</groupId>
 			<artifactId>javaee-api</artifactId>
@@ -38,7 +42,7 @@
 			<artifactId>spring-webmvc</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
-		
+
 		<!-- Spring -->
 		<dependency>
 			<groupId>jstl</groupId>

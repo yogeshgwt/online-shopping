@@ -7,7 +7,6 @@
 
 		<p>This is going to be about us description</p>
 
-
 	</div>
 
 

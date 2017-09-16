@@ -5,7 +5,7 @@
 
 <spring:url var="css" value="/resources/css" />
 <spring:url var="js" value="/resources/js" />
-<spring:url var="images" value="/resources/images" />
+<%-- <spring:url var="images" value="/resources/images" /> --%>
 
 <c:set var="contextRoot" value="${pageContext.request.contextPath}" />
 
@@ -24,13 +24,13 @@
 </script>
 
 <!-- Bootstrap core CSS -->
-<link href="${css}/bootstrap.min.css" rel="stylesheet">
+<link href="${css}/bootstrap.min.css" rel="stylesheet" />
 
 <!-- Bootstrap readable-theme CSS -->
-<link href="${css}/bootstrap-readable-theme.css" rel="stylesheet">
+<link href="${css}/bootstrap-readable-theme.css" rel="stylesheet"/>
 
 <!-- Custom styles for this template -->
-<link href="${css}/myapp.css" rel="stylesheet">
+<link href="${css}/myapp.css" rel="stylesheet"/>
 
 </head>
 
@@ -59,15 +59,18 @@
 		<%@include file="contact.jsp"%>
 	</c:if>
 	
+	<c:if test="${userClickAllProducts == true or userClickCategoryProducts == true }">
+		<%@include file="listProducts.jsp"%>
+	</c:if>
+	
 	</div>
 
 	<!-- Footer -->
 	<%@include file="./shared/footer.jsp"%>
 	
 	<!-- Bootstrap core JavaScript -->
-	<script src="${js}/jquery.js"></script>
+	<script src="${js}/js/jquery.js"></script>
 	<script src="${js}/bootstrap.min.js"></script>
-	
 	<!-- Self coded JavaScript -->
 	<script src="${js}/myapp.js"></script>
   </div>

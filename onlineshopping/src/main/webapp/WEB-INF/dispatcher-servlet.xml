@@ -15,6 +15,7 @@
    ">
 
 	<context:component-scan base-package="com.yog.onlineshopping.controller" />
+	<context:component-scan base-package="com.yog.shoppingbackend.daoimpl" />
 
 	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
